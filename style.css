@@ -1,0 +1,263 @@
+
+.offer-card.most-popular {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .offer-card.most-popular .left {
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px;
+  }
+  
+  .offer-card.most-popular .dropdown-header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .offer-card.most-popular .dropdown-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .dropdown-row span {
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .offer-card.most-popular .price {
+    position: absolute;
+    top: 12px;
+    right: 13px; 
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .offer-card.most-popular .price del {
+    font-size: 0.8rem;
+    color: #bbb;
+    font-weight: normal;
+  }
+  
+  /* General Reset */
+  * {
+      margin: 0;
+      padding: 1px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 400px;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    header {
+      text-align: center;
+      color: #ff4f7c;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1rem 0;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    header .line {
+      flex: 1;
+      height: 1px;
+      background-color: #ddd;
+    }
+    
+    .offer-section {
+      padding: 15px;
+    }
+    
+    .offer-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      position: relative;
+    }
+    
+    .offer-card:hover {
+      border-color: #ff4f7c;
+    }
+    
+    .offer-card.active {
+      border-color: #ff4f7c;
+      background-color: #fff6f9;
+    }
+    
+    .offer-card .left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .offer-card input[type="radio"] {
+      accent-color: #ff4f7c;
+    }
+    
+    .offer-card span {
+      font-size: 0.9rem;
+      background-color: #ff4f7c;
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    
+    .offer-card h3 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    
+    .offer-card .price {
+      font-size: 1rem;
+      color: #333;
+    }
+    
+    .offer-card .price del {
+      color: #bbb;
+      font-size: 0.8rem;
+      display: block;
+    }
+    
+    .most-popular::before {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      background-color: #ff4f7c;
+      color: #fff;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    
+    .dropdown-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+    
+    .dropdown-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 5px;
+      font-size: 0.9rem;
+    }
+    
+    .dropdown-row span {
+      color: inherit; 
+      font-size: inherit; 
+      font-weight: inherit; 
+      display: block; 
+    }
+  
+ 
+  .dropdown-row span {
+      all: unset; 
+      display: inline; 
+    }
+      
+    
+    select {
+      padding-right: 21px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .footer-section {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      color: #555;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center; 
+    }
+    
+    button {
+        display: block;
+        width: 95%;
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #ff4f7c;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    button:hover {
+      background-color: #e5436d;
+    }
+    
+    footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #aaa;
+      margin: 10px 0;
+    }
+    
+
+    
+  
+    
+    .offer-card.expanded .dropdowns {
+        display: block;
+      }
+      
+      .offer-card .dropdowns {
+        display: none;
+      }
+
+   
+
+
+  

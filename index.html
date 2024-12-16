@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <span class="line"></span> YAY! It’s BOGO <span class="line"></span>
+    </header>
+
+    <!-- Offer Section -->
+    <section class="offer-section">
+      <!-- 1 Unit Offer -->
+      <div class="offer-card" data-id="10">
+        <div class="left">
+          <input type="radio" name="offer" value="10" checked>
+          <div>
+            <h3>1 Unit <span>10% Off</span></h3>
+            <p style="font-size: 13px;">Standard Price</p>
+          </div>
+        </div>
+        <div class="price">
+          $10.00 USD
+          <del>$24.00 USD</del>
+        </div>
+      </div>
+
+      <!-- 2 Unit Offer -->
+      <div class="offer-card most-popular active" data-id="20">
+        <div class="left">
+          <input type="radio" name="offer" value="20" style="vertical-align: middle; margin-top: 5px;">
+          <div>
+            <h3>2 Unit <span>20% Off</span></h3>
+            <div class="dropdowns">
+              <div class="dropdown-header">
+                <label>Size</label>
+                <label>Colour</label>
+              </div>
+              <div class="dropdown-row">
+                <span>#1</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option>Black</option>
+                  <option>White</option>
+                </select>
+              </div>
+              <div class="dropdown-row">
+                <span>#2</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option>Black</option>
+                  <option>White</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price">
+          $18.00 USD
+          <del>$24.00 USD</del>
+        </div>
+      </div>
+
+      <!-- 3 Unit Offer -->
+      <div class="offer-card" data-id="30">
+        <div class="left">
+          <input type="radio" name="offer" value="30">
+          <div>
+            <h3>3 Unit <span>30% Off</span></h3>
+          </div>
+        </div>
+        <div class="price">
+          $24.00 USD
+          <del>$24.00 USD</del>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer-section">
+        <div style="color: #e5436d;">Free Delivery</div>
+        <div>Total: $18.00 USD</div>
+      </div>
+    </section>
+
+    <!-- Add to Cart -->
+    <div class="button-container">
+        <button id="cart-button">Add to Cart</button>   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
